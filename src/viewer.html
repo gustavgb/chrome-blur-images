@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      html, body {
+        background-color: #0e0e0e;
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+      }
+
+      img {
+        max-height: 98vh;
+        max-width: 98vw;
+        filter: grayscale(1) blur(20px);
+        transition: filter 5s linear;
+      }
+
+      img.uncovered {
+        filter: none;
+      }
+
+      main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <img id="viewer" />
+    </main>
+    <script src="viewer.js"></script>
+  </body>
+</html>
