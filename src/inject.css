@@ -1,7 +1,7 @@
-/**
- * Place your custom CSS styles here.
- **/
+img:not(.uncovered) {
+  filter: blur(20px) grayscale(1) !important;
+}
 
 img {
-  filter: blur(20px) grayscale(1) !important;
+  transition: filter 3s linear;
 }
